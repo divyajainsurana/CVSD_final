@@ -1,0 +1,50 @@
+source /usr/cad/synopsys/CIC/synthesis.cshrc
+
+dc_shell-t -f file.tcl
+
+
+dc_shell -h #command mode
+dv & #GUI mode
+
+#read tlc file
+source -echo -verbose file.tcl > file.out
+
+#read file
+read_verilog MEMC.v
+
+#current design
+current_design MEMC
+
+#resolve design reference
+link
+check_design
+
+#constrains
+source MEMC_DC.sdc
+
+#Get gate level circuit
+compile -map_effort medium
+
+#Check conditions
+report_timing -path full -delay max -max_paths 1 -nworst1
+report_power
+report_area -nosplit
+
+
+#save design in ddc file
+
+
+#save gate level netlist
+write -hierarchy -format verilog -output MEM_syn.v
+#save timing information
+write_sdf -version 2.1 Mem_syn.sdf
+
+#check design with 
+ncverilog tb_v3.v MEMC.v ../SRAM/sram_512x8/sram_512x8.vp +access+r +notimingchecks
+ncverilog +ncmaxdelays tb_v3.v MEMC_syn.v ../SRAM/sram_512x8/sram_512x8.vp tsmc13.v???? +define+SDF +access+r
+
+
+
+
+
+sslvpn2.ntu.edu.tw
