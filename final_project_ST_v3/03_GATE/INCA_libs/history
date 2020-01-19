@@ -1,0 +1,7 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(19Jan2020:12:47:37):( ncverilog +ncmaxdelays ../01_RTL/tb_v3.v MEMC_syn.v ../SRAM/sram_512x8/sram_512x8.vp tsmc13.v +access+r +define+SDF )
+s2::(19Jan2020:12:55:19):( ncverilog +ncmaxdelays ../01_RTL/tb_v3.v MEMC_syn.v ../SRAM/sram_512x8/sram_512x8.vp tsmc13.v +access+r +define+SDF )
+s3::(19Jan2020:13:06:51):( ncverilog +ncmaxdelays ../01_RTL/tb_v3.v MEMC_syn.v ../SRAM/sram_512x8/sram_512x8.vp tsmc13.v +access+r +define+SDF+TB2 )

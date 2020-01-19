@@ -1,0 +1,11 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++ncmaxdelays
+../01_RTL/tb_v3.v
+MEMC_syn.v
+../SRAM/sram_512x8/sram_512x8.vp
+tsmc13.v
++access+r
++define+SDF+TB2
