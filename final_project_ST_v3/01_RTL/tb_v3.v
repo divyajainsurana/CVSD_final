@@ -7,7 +7,7 @@
 `define PAT2_0      "../Patterns/pattern_RickandMorty_gray_2s_sr5_flip0.hex"
 `define PAT2_1      "../Patterns/pattern_RickandMorty_gray_2s_sr5_flip1.hex"
 `define PAT2_2      "../Patterns/pattern_RickandMorty_gray_2s_sr5_flip2.hex"
-`define PERIOD  10                          // You can modify the clock period to improve the design performance
+`define PERIOD  4                          // You can modify the clock period to improve the design performance
 `define TEST_FRAME_AMOUNT 10
 `define FRAME_M 48
 `define FRAME_N 64
