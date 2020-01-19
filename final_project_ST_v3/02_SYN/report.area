@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : MEMC
+Version: N-2017.09-SP2
+Date   : Sun Jan 19 12:40:24 2020
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/slow.db)
+    sram_512x8 (File: /home/raid7_2/user07/r07158/finalproject/final_project_ST_v4/SRAM/sram_512x8/sram_512x8_slow_syn.db)
+
+Number of ports:                         7457
+Number of nets:                         72767
+Number of cells:                        56978
+Number of combinational cells:          39539
+Number of sequential cells:             17160
+Number of macros/black boxes:               4
+Number of buf/inv:                      12172
+Number of references:                     202
+
+Combinational area:             491326.006748
+Buf/Inv area:                   112250.759020
+Noncombinational area:          567917.774052
+Macro/Black Box area:           123791.546875
+Net Interconnect area:         8443023.367310
+
+Total cell area:               1183035.327675
+Total area:                    9626058.694984
+1

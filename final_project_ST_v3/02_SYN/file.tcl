@@ -1,10 +1,10 @@
 #read file
-read_verilog MEMC.v
+read_verilog "../01_RTL/MEMC.v"
 #current design
-current_design MEMC
+current_design [get_designs MEMC]
 #resolve design reference
 link
-check_design
+check_design [get_designs MEMC]
 #constrains
 source MEMC_DC.sdc
 #Get gate level circuit
